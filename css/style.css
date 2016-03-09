@@ -1,2 +1,298 @@
 @charset "UTF-8";
-body{font-size:62.5%;font-weight:400;padding:0;margin:0;background-color:#0a518f;font-family:"Microsoft YaHei"}ul li{list-style-type:none}ul#menu{width:100%;position:fixed;left:0;top:0;z-index:70}ul#menu li{display:inline-block}ul#menu li a{margin:5px;padding:10px 15px;text-decoration:none;font-size:2em;color:#fff;background-color:#6699CC;opacity:0.8;border-radius:0.5em}ul#menu li a:hover{background-color:#ccc;color:#000}.section{text-align:center;background-color:#66CCCC}#photo img{width:200px;height:200px;border-radius:50%;padding:10px;background-color:#99cccc}h1{font-size:5em;color:#fff;text-shadow:6px 6px 12px #99CCCC}h2{font-size:2.5em;color:#fff}#github a{text-decoration:none;color:#fff}#contactInformation h2{margin-bottom:10%}#contactInformation .left{float:left;margin-left:20%}#contactInformation .right{float:right;margin-right:20%}#contactInformation .tagLittle{text-align:left;background-position:left:center;background-repeat:no-repeat;padding-left:70px;padding-bottom:35px}#contactInformation #tel{background-image:url('../image/icon (1).png')}#contactInformation #email{background-image:url('../image/note.png')}#contactInformation #qq{background-image:url('../image/social.png')}#contactInformation #github{background-image:url('../image/square.png')}.good{background-color:#6699CC}.nogood{background-color:#99CCFF}#skill ul li{display:inline-block;font-size:2em;border-radius:3em;padding:5px;margin:15px 5px}#work h2{font-size:2.5em;color:#fff}#work .left{float:left;margin-left:15%}#work .right{float:right;margin-right:20%}#work iframe{width:320px;height:568px;padding:10px;background-color:#99cccc;border:none}#project p{font-size:2em;color:#fff}#project h2{color:#6699CC}#project #hefei{width:35%;float:left;margin-left:10%}#project #shanxi{width:35%;float:right;margin-right:10%}#project .time{color:#CCFF99}#education h2{color:#6699CC}#education p{font-size:1.5em;color:#fff}#education #master,#bachelor{position:relative}#education #graduationTime{position:absolute;top:-5%;left:15%}
+body {
+    font-size: 62.5%;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    background-color: #0a518f;
+    font-family: "Microsoft YaHei";
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul#menu {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 70;
+}
+
+ul#menu li {
+    display: inline-block;
+}
+
+ul#menu li a {
+    margin: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+    background-color: #6699CC;
+    opacity: 0.8;
+    border-radius: 0.5em;
+}
+
+ul#menu li a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+@media screen and (max-device-width:800px) {
+    body {
+        font-size: 1em;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+.section {
+    text-align: center;
+    background-color: #66CCCC;
+}
+
+#photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #99cccc;
+}
+
+@media screen and (max-device-width:800px) {
+    #photo img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+h1 {
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 6px 6px 12px #99CCCC;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+@media screen and (max-device-width:800px) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+#github a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* #contactInformation h2 {
+    margin-bottom: 10%;
+}
+ */
+
+
+/* #contactInformation {
+    margin-left: 3%;
+} */
+
+#contactInformation #contactme {
+    position: relative;
+    top: -10%;
+}
+
+#contactInformation #information {
+    margin-left: 10%;
+}
+
+
+/* #contactInformation .left {
+	float: left;
+	margin-left: 20%;
+}
+
+#contactInformation .right {
+	float: right;
+	margin-right: 20%;
+} */
+
+@media screen and (min-device-width:800px) {
+    #contactInformation .left {
+        float: left;
+        margin-left: 20%;
+    }
+    #contactInformation .right {
+        float: right;
+        margin-right: 20%;
+    }
+    #contactInformation h2 {
+        margin-bottom: 10%;
+    }
+}
+
+#contactInformation .tagLittle {
+    text-align: left;
+    background-position: left: center;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    padding-bottom: 35px;
+}
+
+#contactInformation #tel {
+    background-image: url('../image/icon (1).png');
+}
+
+#contactInformation #email {
+    background-image: url('../image/note.png');
+}
+
+#contactInformation #qq {
+    background-image: url('../image/social.png');
+}
+
+#contactInformation #github {
+    background-image: url('../image/square.png');
+}
+
+.good {
+    background-color: #6699CC;
+}
+
+.nogood {
+    background-color: #99CCFF;
+}
+
+#skill ul li {
+    display: inline-block;
+    font-size: 2em;
+    border-radius: 3em;
+    padding: 5px;
+    margin: 15px 5px;
+}
+
+@media screen and (max-device-width:800px) {
+    #skill #skillTitle {
+        position: relative;
+        top: -10%;
+    }
+}
+
+#work h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+
+/* #work .left {
+	float: left;
+	margin-left: 15%;
+}
+
+#work .right {
+	float: right;
+	margin-right: 20%;
+} */
+
+#logo img {
+    border-radius: 2em;
+    width: 30%;
+    background-color: #ff7f7f;
+}
+
+#work iframe {
+    display: none;
+}
+
+#gameTitle h2 {
+    display: none;
+}
+
+#work #gameTitle {
+    position: relative;
+    top: -10%;
+}
+
+@media screen and (min-device-width:800px) {
+    #work .left {
+        float: left;
+        margin-left: 15%;
+    }
+    #work .right {
+        float: right;
+        margin-right: 20%;
+    }
+    #work iframe {
+        display: block;
+        width: 320px;
+        height: 568px;
+        padding: 10px;
+        background-color: #99cccc;
+        border: none;
+    }
+    #work #logo {
+        display: none;
+    }
+    #work #gameTitle h2 {
+        display: block;
+    }
+}
+
+#project p {
+    font-size: 2em;
+    color: #fff;
+}
+
+#project h2 {
+    color: #6699CC;
+}
+
+#project #hefei {
+    width: 35%;
+    float: left;
+    margin-left: 10%;
+}
+
+#project #shanxi {
+    width: 35%;
+    float: right;
+    margin-right: 10%;
+}
+
+#project .time {
+    color: #CCFF99;
+}
+
+#education h2 {
+    color: #6699CC;
+}
+
+#education p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#education #master,
+#bachelor {
+    position: relative;
+}
+
+#education #graduationTime {
+    position: absolute;
+    top: -5%;
+    left: 15%;
+}
+
+@media screen and (max-device-width:800px) {
+    #education p#graduationTime {
+        display: none;
+    }
+}
